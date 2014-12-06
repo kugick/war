@@ -36,7 +36,7 @@ public class WarPlugin {
         if (!dataDir.exists() && !dataDir.mkdirs())
             throw new FileNotFoundException("Failed to make War data folder at " + dataDir.getPath() +".");
         config = new WarConfig(this, new File(dataDir, "war.sl3"));
-        logger.info("War 2.0 enabled.");
+        logger.info("Enabling War 2.0.");
     }
 
     @Subscribe
